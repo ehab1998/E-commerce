@@ -1,0 +1,682 @@
+
+*
+{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* -- header => navbar and Home page -- */
+.header
+{
+  /* background: radial-gradient(#fff,#ffd6d6); */
+  background: radial-gradient(#fff,#ffd6d6);
+}
+.header .row
+{
+  margin-top: 70px;
+}
+.navbar
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+nav ul
+{
+  display: inline-block;
+  list-style: none;
+}
+nav ul li
+{
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+.home::before
+{
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: -5px;
+  left: 0px;
+  background-color: #ff523b;
+  width: 100%;
+  height: 3px;
+}
+
+nav ul li a
+{
+  text-decoration: none;
+  cursor: pointer;
+  color: #555;
+}
+.container
+{
+  width: 90%;
+  margin: auto;
+}
+.row
+{
+  display: flex;
+  /* text-align: center; */
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.col-2
+{
+  flex-basis: 50%;
+  min-width: 300px;
+}
+
+.col-2 img
+{
+  width: 100%;
+  padding: 50px 0px;
+}
+.col-2 h1
+{
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+}
+.btn
+{
+  border-radius: 30px;
+  color: #fff;
+  background-color: #ff523b;
+  margin: 30px 0;
+  padding: 8px 30px;
+  display: inline-block;
+  border: 0px solid #ff523b;
+  transition: background .5s;
+}
+.btn:hover
+{
+  background-color: #91635d;
+}
+/* -- end header -- */
+
+/* start categories */
+.small-container
+{
+  width: 80%;
+  margin: auto;
+
+
+}
+.small-container h2
+{
+  text-align: center;
+  margin: 0px auto 80px;
+  width: auto;
+  position: relative;
+  line-height: 50px;
+}
+.small-container h2::after
+{
+  content: "";
+  width: 80px;
+  height: 4px;
+  border-radius: 5px;
+  margin: 0 3px 0;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  background-color: #ff523b;
+  text-align: center;
+  transform: translateX(-50%);
+
+}
+
+.categories
+{
+  margin: 70px 0px;
+}
+.categories .row
+{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.col-3
+{
+  flex-basis: 30%;
+  min-width: 250px;
+  padding: 20px;
+}
+.col-3 img
+{
+  width: 100%;
+}
+/* end categories */
+/* start features */
+.col-4
+{
+  flex-basis: 25%;
+  min-width: 200px;
+  padding: 10px;
+  margin-bottom: 30px;
+  transition: transform .5s;
+}
+.col-4 img
+{
+  width: 100%;
+}
+.col-4 h4
+{
+  color: #555;
+  font-weight: normal;
+}
+.col-4 p
+{
+  font-size: 14px;
+
+}
+.rating
+{
+  color: #ff523b;
+}
+.col-4:hover
+{
+  transform: translateY(-5px);
+}
+
+
+/* end features */
+
+
+/* start offer */
+
+.offer
+{
+  background: radial-gradient(#fff,#ffd6d6);
+  margin-top: 80px;
+  padding: 30px 0;
+}
+.col-2 .offer-img
+{
+  padding: 30px;
+}
+small
+{
+  color:#555
+}
+.col-2 a
+{
+  text-decoration: none;
+}
+/* end offer */
+/* start testimonial */
+
+.testimonial
+{
+  padding-top: 100px;
+}
+.testimonial .col-3
+{
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  transition: transform .5s;
+}
+.testimonial .col-3 img
+{
+  width: 50px;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+.testimonial .col-3:hover
+{
+  transform: translateY(-10px);
+}
+.fa.fa-quote-left
+{
+  font-size: 34px;
+  color: #ff523b;
+}
+.testimonial .col-3 img
+{
+  font-weight: 600;
+  color: #555;
+  font-size: 16px;
+}
+/* End testimonial */
+/* start brands */
+.brands
+{
+  margin: 100px auto;
+}
+.brands .col-5
+{
+  width: 160px;
+}
+.brands img
+{
+  width: 100%;
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+.brands img:hover
+{
+  filter: grayscale(0);
+}
+/* end brands */
+/* start footer */
+.footer
+{
+  background: #000;
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 60px 0 20px;
+}
+.footer p{
+  color: #8a8a8a;
+}
+.footer h3
+{
+  color: #fff;
+  margin-bottom: 20px;
+}
+.footer-col-1 ,.footer-col-2 ,.footer-col-3 ,.footer-col-4
+{
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+.footer-col-1
+{
+  flex-basis: 30%;
+}
+.footer-col-2
+{
+  flex: 1;
+  text-align: center;
+}
+.footer-col-2 img
+{
+  width: 180px;
+  margin-bottom: 20px;
+}
+.footer-col-3,.footer-col-4
+{
+  flex-basis: 12%;
+  text-align: center;
+}
+ul
+{
+  list-style: none;
+}
+.app-logo
+{
+  margin-top: 30px;
+}
+.app-logo img
+{
+  width: 140px;
+}
+.footer hr
+{
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 20px 0;
+}
+.copyright
+{
+  text-align: center;
+}
+/* end footer */
+
+.menu-icon
+{
+  width: 28px;
+  margin-left: 20px;
+  display: none;
+}
+/* media for navbar menu */
+@media only screen and (max-width:800px) {
+  /* all screen that less than 800px */
+  /* انا عايز اقوله لما تبقي الشاشه اقل من 800 عدلي في الليسته اللي عندك */
+  nav ul
+  {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    transition: max-height .5s;
+  }
+  nav ul li
+  {
+    display: block;
+    margin: 10px 50px 10px 0;
+  }
+  nav ul li a
+  {
+    color: #fff;
+  }
+  .menu-icon
+  {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+}
+
+/* -------- start Product page -------- */
+.row-2
+{
+  justify-content: space-between;
+  margin: 100px auto 50px;
+}
+.row-2 h3
+{
+  font-weight: bolder;
+  font-size: 1.7rem;
+}
+.row-2 p
+{
+  color: #555;
+}
+.row-2 select
+{
+  border: 1px solid #ff523b;
+  padding: 5px;
+  width: 150px;
+}
+.row-2 select:focus
+{
+  outline: none;
+}
+.page-btn
+{
+  margin: 0 auto 80px;
+}
+.page-btn span
+{
+  border: 1px solid #ff523b;
+  margin-left: 10px;
+  text-align: center;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  cursor: pointer;
+}
+.page-btn span:hover
+{
+  background-color: #ff523b;
+  color: #fff;
+}
+/* -------- End Product page -------- */
+/* --------- start single-product ---------- */
+.single-product
+{
+  margin: 80px;
+}
+.single-product .col-2 img
+{
+  padding: 0px;
+}
+.single-product .col-2
+{
+  padding: 20px;
+}
+.single-product h4
+{
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 22px;
+}
+.single-product select
+{
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+}
+.single-product input
+{
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 20px;
+  margin-right: 10px;
+  border: 1px solid #ff523b;
+}
+input:focus
+{
+  outline: none;
+}
+.single-product .fa
+{
+  color: #ff523b;
+  padding-left: 10px;
+}
+.small-img-row
+{
+  display: flex;
+  justify-content: space-between;
+}
+.small-img-col
+{
+  flex-basis: 24%;
+  cursor: pointer;
+}
+/* --------- End single-product ---------- */
+
+/* -------- start card item ------- */
+.card-page
+{
+  margin: 80px auto;
+}
+.card-page table
+{
+  width: 100%;
+  border-collapse: collapse;
+}
+.card-info
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+th
+{
+  text-align: left;
+  padding: 5px;
+  color: #fff;
+  background: #ff523b;
+}
+td
+{
+  padding: 10px 5px;
+}
+td input
+{
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+td a
+{
+  text-decoration: none;
+  color: #ff523b;
+  font-size: 12px;
+}
+td img
+{
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+.total-price
+{
+  display: flex;
+  justify-content: flex-end;
+}
+.total-price table
+{
+  border-top: 3px solid #ff523b;
+  width: 100%;
+  max-width: 400px;
+}
+td:last-child
+{
+  text-align: right;
+}
+th:last-child
+{
+  text-align: right;
+}
+
+/* -------- End card item ------- */
+
+/* ------- start account page ------ */
+.account-page
+{
+  padding: 50px 0;
+}
+.form-container
+{
+  width: 300px;
+  height: 400px;
+  margin: auto;
+  padding: 20px 0;
+  background: #fff;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, .1);
+}
+.form-container span
+{
+  font-weight: bold;
+  padding: 0 10px;
+  color: #555;
+  cursor: pointer;
+  width: 100px;
+  display: inline-block;
+}
+.ourForm
+{
+  max-width: 300px;
+  padding: 0 20px;
+  position: absolute;
+  top: 130px;
+
+}
+
+form input
+{
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+}
+form .btn
+{
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0;
+}
+form .btn:focus
+{
+  outline: none;
+}
+
+#loginForm
+{
+  left: -300px;
+  transition: left 1s;
+}
+#loginForm a
+{
+  font-size: 12px;
+  color: #555;
+} 
+#regForm
+{
+  left: 0;
+  transition: left 1s;
+
+}
+.form-container
+{
+  overflow: hidden;
+}
+#indicator
+{
+  width: 80px;
+  height: 3px;
+  margin-top: 8px;
+  border: none;
+  background-color: #ff523b;
+  transform: translateX(160px);
+  transition: transform 1s;
+}
+/* End account */
+/* start contact */
+
+.contact-form input[type=text],input[type=email], select, textarea 
+{
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  /* resize: vertical */
+   /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+.contact
+{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 2px solid #cccccc;
+}
+
+/* End contact */
+/* media for scren less than p00px */
+@media only screen and (max-width:600px) {
+  .row
+  {
+    text-align: center;
+  }
+  .col-2,.col-3,.col-4
+  {
+    flex-basis: 100%;
+  }
+  .single-product .row
+  {
+    text-align: left;
+  }
+  .single-product .col-2
+  {
+    padding: 20px 0;
+  }
+  .single-product h1
+  {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .card-info p
+  {
+    display: none;
+  }
+}
+
+
+
+
+
+
